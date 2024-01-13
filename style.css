@@ -1,0 +1,222 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.text-right{
+	text-align: right;
+}
+.text-left{
+	text-align: left;
+}
+
+/* header */
+
+.HeaderWrapper{
+	width: 100vw;
+	height: 100vh;
+	background: #eee;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+}
+.HeaderWrapper img{
+	position: absolute;
+	bottom: 0;
+	height: 90%;
+}
+.HeaderWrapper h2{
+	overflow-x: hidden;
+	position: absolute;
+	bottom: 0;
+	font-size: 60px;
+	padding-bottom: 80px;
+/* 	animation: marquee 10s linear infinite; */
+}
+/* 
+@keyframes marquee {
+      0% {
+        transform: translateX(100vw);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+}
+ */
+
+header{
+	position: relative;
+	width: 90vw;
+	height: 100vh;
+	margin: 0 auto;
+
+}
+.SocialIconSection{
+	position: absolute;
+	left: 0;
+	padding: 10px 8px;
+	background: #d9d4d4;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	border-radius: 10px;
+	top: 50%;
+  transform: translate(0, -50%);
+}
+.SocialIconSection a{
+	font-size: 28px;
+}
+.fa-square-facebook{
+	color: blue;
+}
+.fa-youtube{
+	color: red;
+}
+.fa-linkedin{
+	color: #0077b5;
+}
+
+/* Skills */
+
+.SkillsWrapper{
+	width: 100vw;
+	height: 100vh;
+	background: #eee;
+	padding: 50px 0;
+}
+.SkillsWrapper h1,
+.ContactArea h1,
+.ClintSecton h1{
+	text-align: center;
+	font-size: 38px;
+
+}
+.SkillsWrapper h1{
+	padding-top: 20px;
+}
+.SkillsArea{
+	width: 80vw;
+	margin: 200px auto 0 auto;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.SkillsBox{
+	width: calc(33.33% - 20px);
+}
+.Skills-Bar-Bg{
+	width: 100%;
+	height: 5px;
+	background: #d2c2c2;
+	border-radius: 5px;
+	position: relative;
+	margin-top: 20px;
+}
+.Skills-Bar{
+	position: absolute;
+	height: 5px;
+	background: green;
+	border-radius: 5px;
+}
+.SkillsBox span{
+	font-size: 18px;
+}
+.SkillsIconSection{
+	display: flex;
+	justify-content: space-evenly;
+	width: 40%;
+	margin: 50px auto 0 auto;
+	padding: 50px 0;
+	font-size: 18px;
+}
+.SkillsIconSection i{
+
+	font-size: 50px;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-square-js,
+.fa-php:hover,
+.fa-react{
+	transition: 0.3s all ease;
+	cursor: pointer;
+}
+.fa-html5:hover{
+	color: red;
+}
+.fa-css3-alt:hover{
+	color: skyblue;
+}
+.fa-square-js:hover{
+	color: yellow;
+}
+.fa-php:hover{
+	color: #232531;
+}
+.fa-react:hover{
+	color: #64D3F3;
+}
+
+
+/* Clint */
+
+.ClintSecton{
+	background: #d7dbd9;
+	padding: 50px 0;
+}
+.ClintLogoWrapper{
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	margin: 50px auto;
+	gap: 20px;
+}
+.ClintLogoWrapper img{
+	width: 20%;
+	aspect-ratio: 3/2;
+	object-fit: contain;
+	mix-blend-mode: color-burn;
+}
+
+
+
+/* Contact */
+
+.ContactArea{
+	background: #eee;
+	padding: 100px 0 50px 0;
+}
+form{
+	width: 60%;
+	margin: 50px auto 0 auto;
+}
+.ContactArea form input[type=text]{
+	width: calc(50% - 10px);
+	padding: 10px 5px;
+	font-size: 18px;
+	margin: 10px 15px 10px 0;
+}
+.ContactArea form input[type=email]{
+	width: calc(50% - 10px);
+	padding: 10px 5px;
+	font-size: 18px;
+	margin: 10px 0;
+}
+textarea{
+	width: 100%;
+	padding: 10px 8px;
+	font-size: 18px;
+	margin: 10px 0 20px 0;
+}
+.ContactArea form input[type=submit]{
+	padding: 10px 30px;
+	font-weight: bold;
+}
