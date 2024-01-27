@@ -71,23 +71,19 @@ a{
 	list-style: none;
 }
 .nav-menu-bar li a{
-	padding: 10px 20px;
+	padding: 10px 15px;
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 15px;
 	color: black;
 	font-weight: 500;
+	border-bottom: 1px solid transparent;
 }
 .home-menu{
-	background: black;
-	color: white !important;
+	background: white;
 }
 .nav-menu-bar > li > a:hover{
-	background: black;
-	color: white;
-}
-.home-menu:hover{
-	background: black !important;
+	border-bottom: 1px solid green;
 }
 nav{
 	border-bottom: 1px solid #ece5e5;
@@ -108,7 +104,7 @@ nav{
 	display: block;
 }
 .sub-menu li a:hover{
-	color: red;
+	color: green;
 }
 .hamburger-menu{
 	display: none;
@@ -190,4 +186,51 @@ nav{
 	font-size: 26px;
 	text-align: center;
 	padding-bottom: 10px;
+}
+
+
+/* Post Area */
+.Post-Area-Heading{
+	font-size: 26px;
+	padding: 10px 16px;
+	border-left: 3px solid #0C8241;
+	margin-top: 20px;
+}
+.Post-Area{
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+	margin-top: 16px;
+}
+.Post-card{
+	width: calc(20% - 10px);
+}
+.Post-card img{
+	width: 100%;
+}
+.see-more-post{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid green;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.see-more-post a{
+	color: white;
+	font-size: 14px;
+	padding: 10px 25px;
+	background-color: #0C8241;
+	text-transform: uppercase;
+	transition: 0.3s all linear;
+	-webkit-transition: 0.3s all linear;
+	-moz-transition: 0.3s all linear;
+	-ms-transition: 0.3s all linear;
+	-o-transition: 0.3s all linear;
+}
+.see-more-post a:hover{
+	background-color: red;
 }
