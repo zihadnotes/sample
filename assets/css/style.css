@@ -204,9 +204,21 @@ nav{
 }
 .Post-card{
 	width: calc(20% - 10px);
+	
 }
-.Post-card img{
+.Post-image-area{
+	height: 150px;
+	overflow: hidden;
+}
+.Post-card .Post-image-area img{
 	width: 100%;
+}
+.Post-card .Post-image-area img:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
 }
 .see-more-post{
 	display: flex;
